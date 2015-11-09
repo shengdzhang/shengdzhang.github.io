@@ -100,9 +100,7 @@
         if (obj1 !== obj2 && obj1.isCollidedWith(obj2)) {
           obj1.collision(obj2);
           if (obj1 instanceof AlienDestroyer.PowerUp && obj2 instanceof AlienDestroyer.Ship) {
-            if(!obj2.explode) {
-              game.displayPowerMessage(obj1);
-            }
+            game.displayPowerMessage(obj1);
           }
         }
       });

@@ -12,7 +12,7 @@
   };
 
   PowerUp.COLOR = "#888";
-  PowerUp.RADIUS = 12;
+  PowerUp.RADIUS = 10;
   PowerUp.SPEED = 1;
 
   Util.inherits(PowerUp, AlienDestroyer.MovingObject);
@@ -36,8 +36,8 @@
 
     ctx.fillStyle = "black";
     ctx.font = "bold 10px Arial";
-    var posx = this.pos[0] - 0.5;
-    var posy = this.pos[1] + this.radius - 3.5;
+    var posx = this.pos[0] + 1;
+    var posy = this.pos[1] + this.radius;
     if (this.mark === "I") {
       posx += 2;
     } else if (this.mark === "W") {
@@ -53,10 +53,8 @@
 
   PowerUp.prototype.collision = function (otherObject) {
     if(otherObject instanceof AlienDestroyer.Ship) {
-      if(!otherObject.explode) {
-        this.game.remove(this);
-        otherObject.powerUp(this.mark);
-      }
+      this.game.remove(this);
+      otherObject.powerUp(this.mark);
     }
   };
 

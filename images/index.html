@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Alien Destroyer">
+    <meta name="keywords" content="HTML,CSS,JavaScript">
+    <meta name="author" content="Sheng Da Zhang">
+    <title>Alien Destroyer</title>
+	<link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+    <link rel="stylesheet" href="css/aliendestroyer.css" type="text/css">
+  </head>
+
+  <body>
+
+    <script src="lib/util.js"></script>
+    <script src="lib/game.js"></script>
+    <script src="lib/movingObject.js"></script>
+    <script src="lib/aliens.js"></script>
+    <script src="lib/boss.js"></script>
+    <script src="lib/superboss.js"></script>
+    <script src="lib/ship.js"></script>
+    <script src="lib/bullet.js"></script>
+    <script src="lib/bomb.js"></script>
+    <script src="lib/powerup.js"></script>
+    <script src="lib/gameView.js"></script>
+    <div class="page-wrapper">
+      <h1>Alien Destroyer</h1>
+      <div class="canvas-wrapper">
+        <canvas width="800" height="600" id="canvas"></canvas>
+      </div>
+      <div class="button-wrapper">
+        <input type="button" id="start" value="Start">
+        <input type="button" id="reset" value="Reset">
+      </div>
+    </div>
+    <script>
+      var canvasEl = document.getElementsByTagName("canvas")[0];
+      var game = false;
+      var newG = new AlienDestroyer.GameView(canvasEl);
+
+      newG.filler();
+
+      document.getElementById("start").onclick = function (e) {
+        e.preventDefault();
+        if (!game) {
+          newG.start();
+          game = true
+        }
+      };
+
+      document.getElementById("reset").onclick = function (e) {
+        e.preventDefault();
+        newG.stop();
+        newG.reset();
+        newG = new AlienDestroyer.GameView(canvasEl);
+        newG.filler();
+        game = false;
+      };
+    </script>
+  </body>
+</html>

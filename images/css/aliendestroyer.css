@@ -1,0 +1,9 @@
+@import 'reset.css';
+@import 'htmlwrapper.css';
+
+.page-wrapper {
+  width: 100%;
+  height: 100vh;
+  background: url('../images/featured-space-policy.jpg');
+  background-size: cover;
+}
