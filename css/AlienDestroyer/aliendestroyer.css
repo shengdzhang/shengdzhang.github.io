@@ -2,7 +2,7 @@
 @import 'htmlwrapper.css';
 
 .page-wrapper {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   background: url('../../images/featured-space-policy.jpg');
   background-size: cover;

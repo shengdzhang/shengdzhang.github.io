@@ -30,6 +30,7 @@
       </div>
       <div class="button-wrapper">
         <input type="button" id="start" value="Start">
+        <input type="button" id="pause" value="Pause">
         <input type="button" id="reset" value="Reset">
       </div>
     </div>
@@ -47,6 +48,15 @@
           game = true
         }
       };
+
+      document.getElementById("pause").onclick = function (e) {
+        e.preventDefault();
+        if(game) {
+          newG.stop();
+          newG.pauseMessage();
+          game = false
+        }
+      }
 
       document.getElementById("reset").onclick = function (e) {
         e.preventDefault();
