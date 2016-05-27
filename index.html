@@ -3,13 +3,82 @@
   <head>
     <meta charset="UTF-8">
     <meta name="keywords" content="HTML,CSS,JavaScript">
-    <meta name="author" content="Sheng Da Zhang">
+    <meta name="author" content="Sheng Da Zhang Web Page">
     <title>Sheng Da Zhang</title>
+    <link rel="shortcut icon" type="image/png" href="images/home_images/favicon.ico"/>
     <link rel="stylesheet" href="css/homepage.css" type="text/css">
   </head>
 
   <body>
-    <h1> Hello </h1>
-    <a href="aliens.html"> Link to Alien Destroyer</a>
+    <section id="header">
+      <div class="inner">
+        <h1>Sheng Da Zhang</h1>
+        <h2>Software Developer</h2>
+      </div>
+    </section>
+
+    <section id="description" class="group">
+      <div class="inner">
+        <img class="self-photo" src="images/home_images/shengda_zhang.jpg"/>
+        <h3 class="heading">Description</h3>
+        <p>Hello. I am a software developer. </p>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="wrapper">
+        <ul class="group">
+          <h3 class="divider">Projects</h3>
+          <li>
+            <a href="http://www.catstagram.xyz" target="_blank">
+              <img class="project-img" src="http://res.cloudinary.com/catstagram/image/upload/c_scale,w_600/v1462234197/Sign-in_ykw4lm.png"/>
+            </a>
+            <h4 class="project-title">Catstagram</h4>
+            <p> Inspired by Instagram, Catstagram allows felines to share their own photos as well as follow each other. Built mainly using Ruby on Rails with React. </p>
+            <a class="github" href="https://github.com/shengdzhang/Catstagram" target="_blank"><h4>Github</h4></a>
+          </li>
+          <li>
+            <a href="aliens.html" target="_blank">
+              <img class="project-img" src="http://res.cloudinary.com/catstagram/image/upload/c_scale,w_600/v1462237088/AlienDestroyer_s9nrui.png"/>
+            </a>
+            <h4 class="project-title">Alien Destroyer</h4>
+            <p> A bullet hell shooter game built using HTML5 Canvas and Javascript. Use bombs and emp as well as gather powerups to fight the alien invasion! </p>
+            <a class="github" href="https://github.com/shengdzhang/Alien-Destroyer" target="_blank"><h4>Github</h4></a>
+          </li>
+        </ul>
+      </div>
+
+    </section>
+
+    <section id="skills">
+      <div class="images group">
+        <h3 class="divider">Technologies</h3>
+        <ul>
+          <li><img class="skills-img" src="images/home_images/javascript.jpg" title="JavaScript"/></li>
+          <li><img class="skills-img" src="images/home_images/react.png" title="ReactJS"/></li>
+          <li><img class="skills-img" src="images/home_images/jQuery.png" title="jQuery"/></li>
+          <li><img class="skills-img" src="images/home_images/ruby.png" title="Ruby"/></li>
+          <li><img class="skills-img" src="images/home_images/rails.png" title="Rails"/></li>
+          <li><img class="skills-img" src="images/home_images/SQL.jpg" title="SQL"/></li>
+          <li><img class="skills-img" src="images/home_images/git.jpg" title="Git"/></li>
+          <li><img class="skills-img" src="images/home_images/html.png" title="HTML5"/></li>
+          <li><img class="skills-img" src="images/home_images/css.png" title="CSS3"/></li>
+        </ul>
+      </div>
+
+    </section>
+
+    <footer id="contact">
+      <div class="info group">
+        <h3 class="footer-head">Contact Me</h3>
+        <div class="email">
+          <a href="mailto:shengdzhang@gmail.com"><img class="contact-img" src="images/home_images/email.png" title="Email"/></a>
+          <p>shengdzhang@gmail.com</p>
+        </div>
+        <div>
+          <a href="http://linkedin.com/in/shdzhang" target="_blank"><img class="contact-img" src="images/home_images/linkedin.png" title="LinkedIn"/></a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
