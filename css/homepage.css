@@ -30,13 +30,13 @@
 }
 
 #description > .inner{
-  margin-left: 33%;
-  margin-right: 33%;
+  margin-left: 30%;
+  margin-right: 30%;
 }
 
 .self-photo {
-  width: 267px;
-  height: 400px;
+  width: 200px;
+  height: 300px;
   float: right;
   margin-left: 1em;
   border-radius: 50%;
