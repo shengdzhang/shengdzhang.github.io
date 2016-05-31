@@ -2,8 +2,6 @@
 @import 'htmlwrapper.css';
 
 .page-wrapper {
-  width: 100vw;
-  height: 100vh;
   background: url('../../images/AlienDestroyer/featured-space-policy.jpg');
   background-size: cover;
 }
