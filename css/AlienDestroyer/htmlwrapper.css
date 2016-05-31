@@ -5,7 +5,7 @@ h1 {
   margin-bottom: 20px;
   padding-top: 30px;
   color: #000;
-  text-shadow: 2px 2px 2px #3F88BF;
+  text-shadow: 5px 5px 1px #3F88BF;
 }
 
 .canvas-wrapper{
@@ -46,6 +46,7 @@ h1 {
   margin: auto;
   margin-top: 10px;
   width: 400px;
+  padding-bottom: 100px;
 }
 
 .button-wrapper > input:hover {
